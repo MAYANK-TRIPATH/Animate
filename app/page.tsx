@@ -3,6 +3,11 @@ import Hero from "./Components/Hero";
 import Navbar from "./Components/Navbar";
 import Accelerator from "./Components/Accelerator";
 import Carosel from "./Components/Carosel";
+import Animate from "./Components/Animate";
+import Agent from "./Components/Agent";
+import Review from "./Components/Review";
+import Footer from "./Components/Footer";
+
 
 
 export default function Home() {
@@ -20,6 +25,10 @@ export default function Home() {
       <Accelerator />
       </div>
       <Carosel />
+      {/* <Animate /> */}
+      <Agent />
+      <Review />
+      <Footer />
       
     </div>
   );

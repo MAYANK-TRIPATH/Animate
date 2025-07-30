@@ -1,3 +1,5 @@
+
+
 export default function Accelerator() {
     return (
         <div className="max-w-5xl mx-auto px-8 mb-24 py-20 ">
@@ -17,6 +19,7 @@ export default function Accelerator() {
                     </p>
                 </div>
             </div>
+            
         </div>
     )
 }
