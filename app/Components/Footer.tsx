@@ -1,9 +1,9 @@
 export default function Footer() {
     return (
-        <footer className="bg-[rgb(241,241,238)] lg:h-[580px] px-8 relative">
+        <footer className="bg-[rgb(241,241,238)] min-h-[400px] sm:min-h-[500px] lg:h-[580px] px-4 sm:px-6 lg:px-8 relative">
             
             <div
-                className="absolute inset-x-10 inset-y-6 opacity-15"
+                className="absolute inset-x-4 sm:inset-x-6 lg:inset-x-10 inset-y-4 sm:inset-y-6 opacity-15"
                 style={{
                     backgroundImage: `radial-gradient(circle, #000000 1px, transparent 1px)`,
                     backgroundSize: '20px 20px'
@@ -11,13 +11,13 @@ export default function Footer() {
             ></div>
 
             
-            <div className="max-w-7xl mx-auto relative ">
+            <div className="max-w-7xl mx-auto relative">
                 
-                <div className="flex justify-between items-start">
+                <div className="flex flex-col lg:flex-row justify-between items-start">
                     
-                    <div className="space-y-3 ml-24 mt-24">
+                    <div className="space-y-3 lg:ml-24 mt-8 sm:mt-12 lg:mt-24 mb-8 lg:mb-0">
                         <div className="flex items-center mt-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 148 46" className="h-10 w-auto">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 148 46" className="h-8 sm:h-10 w-auto">
                                 <path fill="#1B1F1C" d="M24.245 31.65h-3.17V8.05h3.17v9.676c.303-.81 1.753-3.27 5.563-3.27 3.81 0 5.596 2.528 5.596 6.237v10.956h-3.17V21.434c0-3-1.381-4.214-3.54-4.214-4.382 0-4.45 4.855-4.45 7.215v7.215Zm66.39 0h-3.169V8.05h3.17v9.676c.303-.81 1.752-3.27 5.562-3.27 3.81 0 5.596 2.528 5.596 6.237v10.956h-3.169V21.434c0-3-1.382-4.214-3.54-4.214-4.382 0-4.45 4.855-4.45 7.215v7.215Zm23.702 0h-4.113c-2.765 0-4.214-1.349-4.214-4.113v-9.98h-3.81v-2.63h3.81V9.703h3.169v5.226h4.517v2.63h-4.517v9.709c0 1.146.505 1.652 1.652 1.652h3.506v2.73Z"></path>
                                 <path fill="#1B1F1C" fillRule="evenodd" d="M73.044 38.224h7.788c2.899 0 5.326-1.55 5.326-4.686 0-2.798-2.124-4.686-5.394-4.686h-7.248c-1.146 0-1.484-.54-1.484-1.079 0-.607.574-1.214 1.484-1.585.944.506 2.023.641 3.169.641 3.742 0 6.338-2.427 6.641-6.203l.068-.81c.135-1.921.674-2.258 2.09-2.258h1.382v-2.63h-1.719c-1.72 0-2.461 1.045-2.765 2.495-.775-1.315-2.63-2.967-5.73-2.967-3.912 0-6.743 2.697-6.743 6.237 0 1.99.876 3.506 1.854 4.383-1.147.742-2.495 1.888-2.495 3.54 0 1.348.54 2.157 1.483 2.73-.977.607-2.157 1.821-2.157 3.507 0 1.955 1.18 3.371 4.45 3.371Zm7.369-17.565c0 2.081-1.537 3.675-3.728 3.675-2.192 0-3.675-1.628-3.675-3.675 0-2.046 1.483-3.708 3.675-3.708 2.191 0 3.728 1.628 3.728 3.708Zm.014 14.868H73.92c-1.618 0-2.528-.404-2.528-1.753 0-1.045.674-1.787 1.214-2.124h7.821c1.349 0 2.529.337 2.529 1.922 0 1.584-1.18 1.955-2.529 1.955Z" clipRule="evenodd"></path>
                                 <path fill="#1B1F1C" d="M59.33 32.122c-3.81 0-5.496-2.528-5.496-6.237V14.928h3.17v10.215c0 3 1.348 4.215 3.438 4.215 4.18 0 4.383-4.552 4.383-7.148v-7.282h3.169V31.65h-3.102v-2.865c-.54.977-2.124 3.337-5.562 3.337Z"></path>
@@ -32,7 +32,7 @@ export default function Footer() {
                             <p>32943, New York, NY</p>
                             <p>10003-1502</p>
                         </div>
-                        <div className="flex space-x-6 pt-44">
+                        <div className="flex flex-wrap gap-4 sm:gap-6 pt-8 sm:pt-12 lg:pt-44">
                             <a href="#" className="text-xs font-semibold text-gray-900">Instagram</a>
                             <a href="#" className="text-xs font-semibold text-gray-900">LinkedIn</a>
                             <a href="#" className="text-xs font-semibold text-gray-900">X(Twitter)</a>
@@ -41,11 +41,11 @@ export default function Footer() {
                     </div>
 
                     
-                    <div className="flex space-x-8 gap-12 mt-24">
+                    <div className="flex flex-col sm:flex-row lg:flex-row space-y-8 sm:space-y-0 sm:space-x-8 gap-8 sm:gap-12 lg:gap-12 mt-8 sm:mt-12 lg:mt-24">
                         
                         <div className="space-y-3">
-                            <h4 className="font-semibold text-gray-800 text-md opacity-50">Product</h4>
-                            <ul className="space-y-4 text-[11px] font-semibold text-black">
+                            <h4 className="font-semibold text-gray-800 text-sm sm:text-md opacity-50">Product</h4>
+                            <ul className="space-y-3 sm:space-y-4 text-[11px] font-semibold text-black">
                                 <li><a href="#" className="text-black">Platform</a></li>
                                 <li><a href="#" className="text-black">Agent Accelerator</a></li>
                                 <li><a href="#" className="text-black">Industries</a></li>
@@ -55,8 +55,8 @@ export default function Footer() {
 
                         
                         <div className="space-y-3">
-                            <h4 className="font-semibold text-gray-800 text-md opacity-50">Company</h4>
-                            <ul className="space-y-4 text-[11px] font-semibold text-black">
+                            <h4 className="font-semibold text-gray-800 text-sm sm:text-md opacity-50">Company</h4>
+                            <ul className="space-y-3 sm:space-y-4 text-[11px] font-semibold text-black">
                                 <li><a href="#" className="text-gray-900">Community</a></li>
                                 <li><a href="#" className="text-gray-900">Media Inquiries</a></li>
                                 <li><a href="#" className="text-gray-900">Careers</a></li>
@@ -67,8 +67,8 @@ export default function Footer() {
 
                         
                         <div className="space-y-3">
-                            <h4 className="font-semibold text-gray-800 text-md opacity-50">Support</h4>
-                            <ul className="space-y-4 text-[11px] font-semibold text-black">
+                            <h4 className="font-semibold text-gray-800 text-sm sm:text-md opacity-50">Support</h4>
+                            <ul className="space-y-3 sm:space-y-4 text-[11px] font-semibold text-black">
                                 <li><a href="#" className="text-gray-900">Help Center</a></li>
                                 <li><a href="#" className="text-gray-900">API Docs</a></li>
                                 <li><a href="#" className="text-gray-900">Partners</a></li>
@@ -76,11 +76,11 @@ export default function Footer() {
                                 <li><a href="#" className="text-gray-900">Refund Policy</a></li>
                                 <li><a href="#" className="text-gray-900">Cancellation Policy</a></li>
                             </ul>
-                            <div className="relative w-full mt-16">
+                            <div className="relative w-full mt-8 sm:mt-12 lg:mt-16">
                                 <input
                                     type="email"
                                     placeholder="What is your work email?"
-                                    className="lg:w-72 px-4 py-3 pr-32 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-lime-500 focus:border-transparent text-xs"
+                                    className="w-full sm:w-80 lg:w-72 px-4 py-3 pr-32 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-lime-500 focus:border-transparent text-xs"
                                 />
                                 <button className="absolute right-1 top-1 px-4 py-2 bg-gradient-to-r from-lime-400 to-lime-500 text-white font-semibold rounded-md hover:from-lime-500 hover:to-lime-600 transition-all duration-200 flex items-center justify-center whitespace-nowrap text-sm">
                                     Get Started ▸
@@ -94,9 +94,9 @@ export default function Footer() {
 
                 
                 <div className="max-w-7xl mx-auto relative z-10 mt-8">
-                    <div className="flex justify-between items-center">
+                    <div className="flex flex-col sm:flex-row justify-between items-center space-y-6 sm:space-y-0">
                         
-                        <div className="flex space-x-2 lg:ml-24 ">
+                        <div className="flex space-x-2 lg:ml-24 order-2 sm:order-1">
                             <div className="flex flex-col items-center">
                                 <div className="w-12 h-12 bg-black border-2 border-yellow-300 rounded-full flex items-center justify-center">
                                     <span className="text-white text-xs font-bold">HIPAA</span>
@@ -110,10 +110,10 @@ export default function Footer() {
                         </div>
 
                         
-                        <p className="text-xs text-gray-400 max-w-48 lg:mr-[450px]">Copyright © 2025 Thoughtly, Inc. All rights reserved.</p>
+                        <p className="text-xs text-gray-400 max-w-48 lg:mr-[450px] text-center sm:text-left order-1 sm:order-2">Copyright © 2025 Thoughtly, Inc. All rights reserved.</p>
 
                         
-                        <div className="flex flex-col space-y-2 lg:mr-24 lg:w-48">
+                        <div className="flex flex-col space-y-2 lg:mr-24 lg:w-48 order-3 text-center sm:text-right">
                             <a href="#" className="text-xs text-gray-400">Terms of Service</a>
                             <a href="#" className="text-xs text-gray-400">Privacy Policy</a>
                         </div>

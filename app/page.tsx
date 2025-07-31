@@ -7,6 +7,7 @@ import Animate from "./Components/Animate";
 import Agent from "./Components/Agent";
 import Review from "./Components/Review";
 import Footer from "./Components/Footer";
+import Frame from "./Components/Frame";
 
 
 
@@ -27,7 +28,11 @@ export default function Home() {
       <Carosel />
       {/* <Animate /> */}
       <Agent />
+      <div className="mt-16 sm:mt-48 lg:mt-48">
       <Review />
+      </div>
+      
+      <Frame />
       <Footer />
       
     </div>
