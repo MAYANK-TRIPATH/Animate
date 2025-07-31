@@ -3,7 +3,38 @@
 import React from 'react'
 import { motion, useInView } from 'framer-motion'
 
-const steps = [
+// Type definitions
+interface FileItem {
+  name: string
+  icon: string
+  removable?: boolean
+}
+
+interface AppItem {
+  name: string
+}
+
+interface SettingItem {
+  name: string
+  value: number
+}
+
+interface MediaContent {
+  type: 'image' | 'files' | 'apps' | 'conversation' | 'settings'
+  content: string | FileItem[] | AppItem[] | SettingItem[]
+}
+
+interface Step {
+  id: number
+  title: string
+  description: string
+  badge: string
+  badgeIcon: string
+  step: string
+  media: MediaContent
+}
+
+const steps: Step[] = [
   {
     id: 1,
     title: 'Consultation',
@@ -74,12 +105,12 @@ const steps = [
 ]
 
 export default function ProcessFlow() {
-  const renderMedia = (media: any) => {
+  const renderMedia = (media: MediaContent) => {
     switch (media.type) {
       case 'files':
         return (
           <div className="bg-white rounded-lg p-4 shadow-sm border">
-            {media.content.map((file: any, index: number) => (
+            {(media.content as FileItem[]).map((file: FileItem, index: number) => (
               <div key={index} className="flex items-center justify-between mb-2 last:mb-0">
                 <div className="flex items-center gap-2">
                   <span className="text-lg">{file.icon}</span>
@@ -96,15 +127,15 @@ export default function ProcessFlow() {
       case 'apps':
         return (
           <div className="flex items-center gap-2">
-            {media.content.map((app: any, index: number) => (
+            {(media.content as AppItem[]).map((app: AppItem, index: number) => (
               <div key={index} className="flex items-center gap-1">
                 <div className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs font-medium">
                   {app.name}
                 </div>
-                {index < media.content.length - 1 && (
+                {index < (media.content as AppItem[]).length - 1 && (
                   <span className="text-green-500 text-sm">+</span>
                 )}
-                {index === media.content.length - 1 && (
+                {index === (media.content as AppItem[]).length - 1 && (
                   <span className="text-green-500 text-sm">✓</span>
                 )}
               </div>
@@ -120,14 +151,14 @@ export default function ProcessFlow() {
               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
             </div>
-            <p className="text-sm text-gray-700">{media.content}</p>
+            <p className="text-sm text-gray-700">{media.content as string}</p>
           </div>
         )
       
       case 'settings':
         return (
           <div className="bg-white rounded-lg p-3 shadow-sm border">
-            {media.content.map((setting: any, index: number) => (
+            {(media.content as SettingItem[]).map((setting: SettingItem, index: number) => (
               <div key={index} className="mb-2 last:mb-0">
                 <div className="flex justify-between text-xs text-gray-600 mb-1">
                   <span>{setting.name}</span>

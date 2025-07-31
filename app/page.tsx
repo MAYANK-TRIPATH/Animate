@@ -28,7 +28,7 @@ export default function Home() {
       <Carosel />
       <ProcessFlow />
       <Agent />
-      <div className="mt-16 sm:mt-96 lg:mt-48">
+      <div className="mt-16 sm:mt-[200px] lg:mt-48">
       <Review />
       </div>
       
