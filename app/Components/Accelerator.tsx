@@ -15,7 +15,7 @@ export default function Accelerator() {
                         Our Agent Accelerator program offers seamless integration, expert customization, and comprehensive support to bring your AI agent to life. Experience top-tier service and results, all without the hassle of building yourself.
                     </p>
                     <p className="text-black text-xl font-semibold">
-                        But that's not all. Not only do you get the perfect agent through our program, but you also receive the knowledge and materials to create new AI agents yourself or easily make small changes to the ones we build.
+                        But that&apos;s not all. Not only do you get the perfect agent through our program, but you also receive the knowledge and materials to create new AI agents yourself or easily make small changes to the ones we build.
                     </p>
                 </div>
             </div>

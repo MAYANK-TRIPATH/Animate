@@ -3,11 +3,11 @@ import Hero from "./Components/Hero";
 import Navbar from "./Components/Navbar";
 import Accelerator from "./Components/Accelerator";
 import Carosel from "./Components/Carosel";
-import Animate from "./Components/Animate";
 import Agent from "./Components/Agent";
 import Review from "./Components/Review";
 import Footer from "./Components/Footer";
 import Frame from "./Components/Frame";
+import ProcessFlow from "./Components/ProcessFlow";
 
 
 
@@ -26,14 +26,15 @@ export default function Home() {
       <Accelerator />
       </div>
       <Carosel />
-      {/* <Animate /> */}
+      <ProcessFlow />
       <Agent />
-      <div className="mt-16 sm:mt-48 lg:mt-48">
+      <div className="mt-16 sm:mt-96 lg:mt-48">
       <Review />
       </div>
       
       <Frame />
       <Footer />
+      
       
     </div>
   );
