@@ -32,10 +32,10 @@ export default function Navbar() {
         <div className="fixed inset-0 backdrop-blur-sm z-30" />
       )}
       
-      <nav className="w-full bg-[rgb(246,246,244)] border-b border-gray-100 px-4 sm:px-6 py-3 top-0 z-40 relative">
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <nav className="w-full bg-[rgb(246,246,244)] border-b border-gray-100 px-4 sm:px-6 2xl:px-8 3xl:px-12 py-3 2xl:py-4 3xl:py-6 top-0 z-40 relative">
+        <div className="max-w-7xl 2xl:max-w-8xl 3xl:max-w-9xl mx-auto flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center ml-4 sm:ml-8 lg:ml-[120px] lg:mt-4">
+          <div className="flex items-center ml-4 sm:ml-8 lg:ml-[120px] 2xl:ml-[160px] 3xl:ml-[200px] lg:mt-4 2xl:mt-6 3xl:mt-8">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 148 46" className="h-8 w-auto lg:h-10">
               <path fill="#1B1F1C" d="M24.245 31.65h-3.17V8.05h3.17v9.676c.303-.81 1.753-3.27 5.563-3.27 3.81 0 5.596 2.528 5.596 6.237v10.956h-3.17V21.434c0-3-1.381-4.214-3.54-4.214-4.382 0-4.45 4.855-4.45 7.215v7.215Zm66.39 0h-3.169V8.05h3.17v9.676c.303-.81 1.752-3.27 5.562-3.27 3.81 0 5.596 2.528 5.596 6.237v10.956h-3.169V21.434c0-3-1.382-4.214-3.54-4.214-4.382 0-4.45 4.855-4.45 7.215v7.215Zm23.702 0h-4.113c-2.765 0-4.214-1.349-4.214-4.113v-9.98h-3.81v-2.63h3.81V9.703h3.169v5.226h4.517v2.63h-4.517v9.709c0 1.146.505 1.652 1.652 1.652h3.506v2.73Z"></path>
               <path fill="#1B1F1C" fillRule="evenodd" d="M73.044 38.224h7.788c2.899 0 5.326-1.55 5.326-4.686 0-2.798-2.124-4.686-5.394-4.686h-7.248c-1.146 0-1.484-.54-1.484-1.079 0-.607.574-1.214 1.484-1.585.944.506 2.023.641 3.169.641 3.742 0 6.338-2.427 6.641-6.203l.068-.81c.135-1.921.674-2.258 2.09-2.258h1.382v-2.63h-1.719c-1.72 0-2.461 1.045-2.765 2.495-.775-1.315-2.63-2.967-5.73-2.967-3.912 0-6.743 2.697-6.743 6.237 0 1.99.876 3.506 1.854 4.383-1.147.742-2.495 1.888-2.495 3.54 0 1.348.54 2.157 1.483 2.73-.977.607-2.157 1.821-2.157 3.507 0 1.955 1.18 3.371 4.45 3.371Zm7.369-17.565c0 2.081-1.537 3.675-3.728 3.675-2.192 0-3.675-1.628-3.675-3.675 0-2.046 1.483-3.708 3.675-3.708 2.191 0 3.728 1.628 3.728 3.708Zm.014 14.868H73.92c-1.618 0-2.528-.404-2.528-1.753 0-1.045.674-1.787 1.214-2.124h7.821c1.349 0 2.529.337 2.529 1.922 0 1.584-1.18 1.955-2.529 1.955Z" clipRule="evenodd"></path>
@@ -48,11 +48,11 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden lg:flex items-center space-x-8 lg:pt-6 mr-8 lg:mr-24">
-            <a href="#" className="text-gray-900 font-semibold text-[10px] transition-colors duration-200">
+          <div className="hidden lg:flex items-center space-x-8 2xl:space-x-12 3xl:space-x-16 lg:pt-6 2xl:pt-8 3xl:pt-10 mr-8 lg:mr-24 2xl:mr-32 3xl:mr-40">
+            <a href="#" className="text-gray-900 font-semibold text-[10px] 2xl:text-xs 3xl:text-sm transition-colors duration-200">
               Platform
             </a>
-            <a href="#" className="text-gray-900 font-semibold text-[10px] transition-colors duration-200">
+            <a href="#" className="text-gray-900 font-semibold text-[10px] 2xl:text-xs 3xl:text-sm transition-colors duration-200">
               Agent Accelerator
             </a>
             

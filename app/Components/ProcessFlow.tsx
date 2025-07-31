@@ -18,7 +18,7 @@ export default function ProcessFlow() {
   const section5InView = useInView(section5Ref, { once: false, margin: "-100px" });
 
   return (
-    <div className="relative p-4 sm:p-6 bg-gray-50">
+    <div className="relative p-4 sm:p-6 2xl:p-8 3xl:p-12 bg-gray-50">
       {/* Connection Lines - Hidden on mobile */}
       <svg className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none hidden lg:block">
         {/* Line 1: Consultation → Analysis */}
@@ -66,7 +66,7 @@ export default function ProcessFlow() {
             scale: 1.02, 
             transition: { duration: 0.3 } 
           }}
-          className="w-full max-w-sm mx-auto lg:mx-0 lg:ml-28 lg:w-72 mb-8 lg:mb-12"
+          className="w-full max-w-sm mx-auto lg:mx-0 lg:ml-28 2xl:ml-40 3xl:ml-52 lg:w-72 2xl:w-80 3xl:w-96 mb-8 lg:mb-12 2xl:mb-16 3xl:mb-20"
         >
           <motion.div 
             whileHover={{ 
@@ -144,7 +144,7 @@ export default function ProcessFlow() {
                 scale: 1.05,
                 transition: { duration: 0.2 }
               }}
-              className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900 cursor-pointer"
+              className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl font-semibold text-gray-900 cursor-pointer"
             >
               Consultation
             </motion.h1>
@@ -181,7 +181,7 @@ export default function ProcessFlow() {
             initial={{ opacity: 0, y: 20 }}
             animate={section1InView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="text-gray-600 mb-4 lg:-mb-10 lg:w-60 text-sm lg:ml-2"
+            className="text-gray-600 mb-4 lg:-mb-10 lg:w-60 2xl:w-72 3xl:w-80 text-sm lg:ml-2 2xl:text-base 3xl:text-lg"
           >
             Discuss your business needs with our experts.
           </motion.p>
@@ -214,7 +214,7 @@ export default function ProcessFlow() {
             className="relative cursor-pointer"
           >
             <div className="flex justify-center lg:justify-start">
-              <Image src="/Consult.webp" alt="Consultation" width={100} height={50} className="w-48 lg:ml-60 rounded-lg shadow-sm" />
+              <Image src="/Consult.webp" alt="Consultation" width={100} height={50} className="w-48 2xl:w-56 3xl:w-64 lg:ml-60 2xl:ml-72 3xl:ml-80 rounded-lg shadow-sm" />
             </div>
           </motion.div>
         </motion.div>
@@ -245,7 +245,7 @@ export default function ProcessFlow() {
             scale: 1.02, 
             transition: { duration: 0.3 } 
           }}
-          className="w-full max-w-sm mx-auto lg:mx-0 lg:mr-72 lg:ml-auto lg:w-72 mb-8 lg:mb-12"
+          className="w-full max-w-sm mx-auto lg:mx-0 lg:mr-72 2xl:mr-80 3xl:mr-96 lg:ml-auto lg:w-72 2xl:w-80 3xl:w-96 mb-8 lg:mb-12 2xl:mb-16 3xl:mb-20"
         >
           <div className="flex items-center gap-3 mb-4 p-3 bg-white rounded-lg border border-gray-200 shadow-sm w-fit">
             <div className="w-6 h-6 bg-purple-100 rounded-lg flex items-center justify-center">
@@ -260,17 +260,17 @@ export default function ProcessFlow() {
           </div>
 
           <div className="flex items-start gap-3 mb-3">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900">Analysis</h1>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl font-semibold text-gray-900">Analysis</h1>
             <div className="bg-green-100 text-green-600 text-xs font-semibold px-2 py-1 rounded-full">02</div>
           </div>
 
-          <p className="text-gray-600 mb-4 lg:-mb-10 lg:w-60 text-sm lg:ml-2">
+          <p className="text-gray-600 mb-4 lg:-mb-10 lg:w-60 2xl:w-72 3xl:w-80 text-sm lg:ml-2 2xl:text-base 3xl:text-lg">
             We analyze your requirements and create a detailed plan.
           </p>
 
           <div className="relative">
             <div className="flex justify-center lg:justify-start">
-              <Image src="/Custom.webp" alt="Analysis" width={100} height={50} className="w-48 lg:ml-60 rounded-lg shadow-sm" />
+              <Image src="/Custom.webp" alt="Analysis" width={100} height={50} className="w-48 2xl:w-56 3xl:w-64 lg:ml-60 2xl:ml-72 3xl:ml-80 rounded-lg shadow-sm" />
             </div>
           </div>
         </motion.div>
@@ -281,7 +281,7 @@ export default function ProcessFlow() {
           initial={{ opacity: 0, y: 100, scale: 0.95 }}
           animate={section3InView ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 100, scale: 0.95 }}
           transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
-          className="w-full max-w-sm mx-auto lg:mx-0 lg:ml-28 lg:w-72 mb-8 lg:mb-12"
+          className="w-full max-w-sm mx-auto lg:mx-0 lg:ml-28 2xl:ml-40 3xl:ml-52 lg:w-72 2xl:w-80 3xl:w-96 mb-8 lg:mb-12 2xl:mb-16 3xl:mb-20"
         >
           <div className="flex items-center gap-3 mb-4 p-3 bg-white rounded-lg border border-gray-200 shadow-sm w-fit">
             <div className="w-6 h-6 bg-orange-100 rounded-lg flex items-center justify-center">
@@ -296,17 +296,17 @@ export default function ProcessFlow() {
           </div>
 
           <div className="flex items-start gap-3 mb-3">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900">Development</h1>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl font-semibold text-gray-900">Development</h1>
             <div className="bg-green-100 text-green-600 text-xs font-semibold px-2 py-1 rounded-full">03</div>
           </div>
 
-          <p className="text-gray-600 mb-4 lg:-mb-10 lg:w-60 text-sm lg:ml-2">
+          <p className="text-gray-600 mb-4 lg:-mb-10 lg:w-60 2xl:w-72 3xl:w-80 text-sm lg:ml-2 2xl:text-base 3xl:text-lg">
             Our team builds your solution with cutting-edge technology.
           </p>
 
           <div className="relative">
             <div className="flex justify-center lg:justify-start">
-              <Image src="/Interface.webp" alt="Development" width={100} height={50} className="w-48 lg:ml-60 rounded-lg shadow-sm" />
+              <Image src="/Interface.webp" alt="Development" width={100} height={50} className="w-48 2xl:w-56 3xl:w-64 lg:ml-60 2xl:ml-72 3xl:ml-80 rounded-lg shadow-sm" />
             </div>
           </div>
         </motion.div>
@@ -317,7 +317,7 @@ export default function ProcessFlow() {
           initial={{ opacity: 0, y: 100, scale: 0.95 }}
           animate={section4InView ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 100, scale: 0.95 }}
           transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
-          className="w-full max-w-sm mx-auto lg:mx-0 lg:mr-54 lg:ml-auto lg:w-72 mb-8 lg:mb-12"
+          className="w-full max-w-sm mx-auto lg:mx-0 lg:mr-54 2xl:mr-64 3xl:mr-72 lg:ml-auto lg:w-72 2xl:w-80 3xl:w-96 mb-8 lg:mb-12 2xl:mb-16 3xl:mb-20"
         >
           <div className="flex items-center gap-3 mb-4 p-3 bg-white rounded-lg border border-gray-200 shadow-sm w-fit">
             <div className="w-6 h-6 bg-red-100 rounded-lg flex items-center justify-center">
@@ -332,17 +332,17 @@ export default function ProcessFlow() {
           </div>
 
           <div className="flex items-start gap-3 mb-3">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900">Testing</h1>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl font-semibold text-gray-900">Testing</h1>
             <div className="bg-green-100 text-green-600 text-xs font-semibold px-2 py-1 rounded-full">04</div>
           </div>
 
-          <p className="text-gray-600 mb-4 lg:-mb-10 lg:w-60 text-sm lg:ml-2">
+          <p className="text-gray-600 mb-4 lg:-mb-10 lg:w-60 2xl:w-72 3xl:w-80 text-sm lg:ml-2 2xl:text-base 3xl:text-lg">
             Thorough testing ensures quality and performance.
           </p>
 
           <div className="relative">
             <div className="flex justify-center lg:justify-start">
-              <Image src="/Integration.webp" alt="Testing" width={100} height={50} className="w-48 lg:ml-60 rounded-lg shadow-sm" />
+              <Image src="/Integration.webp" alt="Testing" width={100} height={50} className="w-48 2xl:w-56 3xl:w-64 lg:ml-60 2xl:ml-72 3xl:ml-80 rounded-lg shadow-sm" />
             </div>
           </div>
         </motion.div>
@@ -353,7 +353,7 @@ export default function ProcessFlow() {
           initial={{ opacity: 0, y: 100, scale: 0.95 }}
           animate={section5InView ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 100, scale: 0.95 }}
           transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
-          className="w-full max-w-sm mx-auto lg:mx-0 lg:ml-28 lg:w-72"
+          className="w-full max-w-sm mx-auto lg:mx-0 lg:ml-28 2xl:ml-40 3xl:ml-52 lg:w-72 2xl:w-80 3xl:w-96"
         >
           <div className="flex items-center gap-3 mb-4 p-3 bg-white rounded-lg border border-gray-200 shadow-sm w-fit">
             <div className="w-6 h-6 bg-green-100 rounded-lg flex items-center justify-center">
@@ -368,17 +368,17 @@ export default function ProcessFlow() {
           </div>
 
           <div className="flex items-start gap-3 mb-3">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-gray-900">Launch</h1>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl font-semibold text-gray-900">Launch</h1>
             <div className="bg-green-100 text-green-600 text-xs font-semibold px-2 py-1 rounded-full">05</div>
           </div>
 
-          <p className="text-gray-600 mb-4 lg:-mb-10 lg:w-60 text-sm lg:ml-2">
+          <p className="text-gray-600 mb-4 lg:-mb-10 lg:w-60 2xl:w-72 3xl:w-80 text-sm lg:ml-2 2xl:text-base 3xl:text-lg">
             Your solution goes live with full support and maintenance.
           </p>
 
           <div className="relative">
             <div className="flex justify-center lg:justify-start">
-              <Image src="/Empowerment.webp" alt="Launch" width={100} height={50} className="w-48 lg:ml-60 rounded-lg shadow-sm" />
+              <Image src="/Empowerment.webp" alt="Launch" width={100} height={50} className="w-48 2xl:w-56 3xl:w-64 lg:ml-60 2xl:ml-72 3xl:ml-80 rounded-lg shadow-sm" />
             </div>
           </div>
         </motion.div>

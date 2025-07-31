@@ -1,9 +1,9 @@
 export default function Footer() {
     return (
-        <footer className="bg-[rgb(241,241,238)] min-h-[400px] sm:min-h-[500px] lg:h-[580px] px-4 sm:px-6 lg:px-8 relative">
+        <footer className="bg-[rgb(241,241,238)] min-h-[400px] sm:min-h-[500px] lg:h-[580px] 2xl:h-[680px] 3xl:h-[780px] px-4 sm:px-6 lg:px-8 2xl:px-12 3xl:px-16 relative">
             
             <div
-                className="absolute inset-x-4 sm:inset-x-6 lg:inset-x-10 inset-y-4 sm:inset-y-6 opacity-15"
+                className="absolute inset-x-4 sm:inset-x-6 lg:inset-x-10 2xl:inset-x-16 3xl:inset-x-20 inset-y-4 sm:inset-y-6 2xl:inset-y-8 3xl:inset-y-10 opacity-15"
                 style={{
                     backgroundImage: `radial-gradient(circle, #000000 1px, transparent 1px)`,
                     backgroundSize: '20px 20px'
@@ -11,11 +11,11 @@ export default function Footer() {
             ></div>
 
             
-            <div className="max-w-7xl mx-auto relative">
+            <div className="max-w-7xl 2xl:max-w-8xl 3xl:max-w-9xl mx-auto relative">
                 
                 <div className="flex flex-col lg:flex-row justify-between items-start">
                     
-                    <div className="space-y-3 lg:ml-24 mt-8 sm:mt-12 lg:mt-24 mb-8 lg:mb-0">
+                    <div className="space-y-3 lg:ml-24 2xl:ml-32 3xl:ml-40 mt-8 sm:mt-12 lg:mt-24 2xl:mt-32 3xl:mt-40 mb-8 lg:mb-0">
                         <div className="flex items-center mt-4">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 148 46" className="h-8 sm:h-10 w-auto">
                                 <path fill="#1B1F1C" d="M24.245 31.65h-3.17V8.05h3.17v9.676c.303-.81 1.753-3.27 5.563-3.27 3.81 0 5.596 2.528 5.596 6.237v10.956h-3.17V21.434c0-3-1.381-4.214-3.54-4.214-4.382 0-4.45 4.855-4.45 7.215v7.215Zm66.39 0h-3.169V8.05h3.17v9.676c.303-.81 1.752-3.27 5.562-3.27 3.81 0 5.596 2.528 5.596 6.237v10.956h-3.169V21.434c0-3-1.382-4.214-3.54-4.214-4.382 0-4.45 4.855-4.45 7.215v7.215Zm23.702 0h-4.113c-2.765 0-4.214-1.349-4.214-4.113v-9.98h-3.81v-2.63h3.81V9.703h3.169v5.226h4.517v2.63h-4.517v9.709c0 1.146.505 1.652 1.652 1.652h3.506v2.73Z"></path>
